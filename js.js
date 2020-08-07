@@ -2,9 +2,9 @@
     $.fn.generateLetters = function(prop) {
   
       var options = $.extend({
-        "step": 60, // How many times should the letters be changed
-        "randomVariance": 20, // Random variance in the step values NOT USED
-        "fps": 90, // Frames Per Second
+        "step": 1, // How many times should the letters be changed "60"
+        "randomVariance": 200, // Random variance in the step values NOT USED "20"
+        "fps": 100000000, // Frames Per Second
         "text": "", // Use this text instead of the contents
         "callback": function() {$( ".wow" ).addClass( "show" );} // Run once the animation is complete
       }, prop);
